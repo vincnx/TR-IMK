@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bec4b8746b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <!-- navbar -->
+    <nav class="navbar m-140px my-3">
+        <a href="index.html" id="logo" class="text-decoration-none">TICKET.</a>
+        <div class="d-flex justify-content-between" id="nav-items">
+            <a href="pesawat.html" class="text-decoration-none font-dark-blue active">Pesawat</a>
+            <a href="penginapan.html" class="text-decoration-none font-dark-blue hover-blue">Penginapan</a>
+        </div>
+        <div class="d-flex justify-content-between align-items-center" id="masuk-daftar">
+            <p>Masuk</p>
+            <div id="daftar">
+                <p class="mb-0 font-white">daftar</p>
+            </div>
+        </div>
+    </nav>
+    <!-- jumbotron -->
+    <img src="/image/pesawat.png" alt="" class="position-absolute top-0 start-0 end-0 m-auto z-n2 rounded-1 img-fluid">
+    <h1 id="head2">Mulai Perjalanan <br> Anda</h1>
+
+    <div id="card-plane-desc" class="shadow rounded-1" style="width: 1088px; margin:auto; margin-top: 206px">
+        <div class="d-flex justify-content-between">
+
+            <div class="d-inline-flex align-items-center">
+                <div class="d-inline-flex flex-column">
+                    <!-- asal -->
+                    <div class="d-inline-flex flex-column p-20px">
+                        <p class="font-20">Dari</p>
+                        <div id="asal">
+                            <span class="input font-39 semi-bold" role="textbox" contenteditable>Jakarta</span>
+                            <p class="font-13 semi-bold">JKTA, Indonesia</p>
+                        </div>
+                    </div>
+                    <div class="line"></div>
+                    <!-- tujuan -->
+                    <div class="d-inline-flex flex-column p-20px">
+                        <p class="font-20">Ke</p>
+                        <div id="tujuan">
+                            <span class="input font-39 semi-bold" role="textbox" contenteditable>Denpasar</span>
+                            <p class="font-13 semi-bold">DPS, Indonesia</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- switch icon -->
+                <div class="p-20px">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22" height="31" viewBox="0 0 22 31" fill="none">
+                        <path d="M17.9823 24.3458V13.745C17.9823 12.7749 17.196 11.9811 16.235 11.9811C15.274 11.9811 14.4877 12.7749 14.4877 13.745V24.3458H11.3601C10.5738 24.3458 10.1894 25.2983 10.7485 25.8451L15.6235 30.7486C15.9729 31.0838 16.5146 31.0838 16.864 30.7486L21.739 25.8451C22.2981 25.2983 21.8962 24.3458 21.1274 24.3458H17.9823ZM5.13971 0.251403L0.264775 5.17259C-0.294358 5.71939 0.0900455 6.67188 0.876326 6.67188H4.00397V17.2727C4.00397 18.2428 4.79025 19.0366 5.75126 19.0366C6.71227 19.0366 7.49855 18.2428 7.49855 17.2727V6.67188H10.6262C11.4125 6.67188 11.7969 5.71939 11.2378 5.17259L6.36282 0.251403C6.19929 0.0902267 5.97981 0 5.75126 0C5.52272 0 5.30324 0.0902267 5.13971 0.251403Z" fill="#0F2640"/>
+                    </svg>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column justify-content-between">
+                <!-- atas -->
+                <div class="d-flex gap-4">
+
+                    <div class="d-flex">
+                        <p class="font-20 semi-bold">1 Penumpang</p>
+                        <p>
+                            <i class="fa-solid fa-caret-down p-1"></i>
+                        </p>
+                    </div>
+                    <select name="language" id="language" class="border-0 font-20 semi-bold">
+                        <option value="ekonomi" class="font-20" selected>Ekonomi</option>
+                        <option value="premium-ekonomi" class="font-20">Premium Ekonomi</option>
+                        <option value="bisnis" class="font-20">Bisnis</option>
+                        <option value="first-class" class="font-20">First Class</option>
+                    </select>
+                    <select name="language" id="language" class="border-0 font-20 semi-bold">
+                        <option value="pulang-pergi" class="font-20" selected>Pulang-pergi</option>
+                        <option value="sekali-jalan" class="font-20">Sekali jalan</option>
+                    </select>
+                </div>
+                <!-- tengah -->
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <p class="font-20">Berangkat</p>
+                            <p><i class="fa-regular fa-calendar p-2 fa-lg"></i></p>
+                        </div>
+                        <p class="semi-bold font-31">22 Feb 2024</p>
+                    </div>
+                    <div>
+                        <div class="d-flex align-items-center">
+                            <p class="font-20">Pulang</p>
+                            <p><i class="fa-regular fa-calendar p-2 fa-lg"></i></p>
+                        </div>
+                        <p class="semi-bold font-31">25 Feb 2024</p>
+                    </div>
+                </div>
+                <!-- bawah -->
+                <div class="bg-dark-blue d-flex justify-content-center align-items-center rounded" id="button">
+                    <p class="font-white font-20 med semi-bold">Cari Sekarang</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="m-120px mt-5">
+        <!-- header -->
+        <h3 class="semi-bold font-39">Terbang Lebih Hemat</h3>
+        <div class="d-flex justify-content-between">
+            <p class="font-dark-gray">Nikmati terbang ke berbagai destinasi dengan harga spesial.</p>
+            <p class="semi-bold">Eksplor Lainnya</p>
+        </div>
+        <!-- card -->
+        <div class="d-flex flex-wrap justify-content-between align-items-center">
+            <div class="d-flex flex-column shadow-sm m-1 mt-4">
+                <img src="/image/medan.png" alt="">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-inline-flex gap-3 align-items-center">
+                            <p class="semi-bold">Batam</p>
+                            <p><i class="fa-solid fa-arrow-right fa-sm"></i></p>
+                            <p class="semi-bold">Medan</p>
+                        </div>
+                        <p>25 Feb 2024</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mt-4">
+                        <div class="d-inline-flex flex-column">
+                            <p>Lion Air</p>
+                            <p>Ekonomi</p>
+                        </div>
+                        <div class="d-inline-flex flex-column align-items-end">
+                            <p class="font-13">Mulai dari</p>
+                            <p class="font-orange semi-bold font-20">IDR 852.200</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column shadow-sm m-1 mt-4">
+                <img src="/image/jakarta.png" alt="">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-inline-flex gap-3 align-items-center">
+                            <p class="semi-bold">Medan</p>
+                            <p><i class="fa-solid fa-arrow-right fa-sm"></i></p>
+                            <p class="semi-bold">Jakarta</p>
+                        </div>
+                        <p>30 Feb 2024</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mt-4">
+                        <div class="d-inline-flex flex-column">
+                            <p>Garuda Indonesia</p>
+                            <p>Ekonomi</p>
+                        </div>
+                        <div class="d-inline-flex flex-column align-items-end">
+                            <p class="font-13">Mulai dari</p>
+                            <p class="font-orange semi-bold font-20">IDR 1.174.187</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column shadow-sm m-1 mt-4">
+                <img src="/image/surabaya.png" alt="">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-inline-flex gap-3 align-items-center">
+                            <p class="semi-bold">Makassar</p>
+                            <p><i class="fa-solid fa-arrow-right fa-sm"></i></p>
+                            <p class="semi-bold">Surabaya</p>
+                        </div>
+                        <p>17 Mar 2024</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mt-4">
+                        <div class="d-inline-flex flex-column">
+                            <p>Sriwijaya Air</p>
+                            <p>Ekonomi</p>
+                        </div>
+                        <div class="d-inline-flex flex-column align-items-end">
+                            <p class="font-13">Mulai dari</p>
+                            <p class="font-orange semi-bold font-20">IDR 1.164.064</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="d-flex flex-column shadow-sm m-1 mt-4">
+                <img src="/image/bali.png" alt="">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1">
+                    <div class="d-flex justify-content-between">
+                        <div class="d-inline-flex gap-3 align-items-center">
+                            <p class="semi-bold">Balikpapan</p>
+                            <p><i class="fa-solid fa-arrow-right fa-sm"></i></p>
+                            <p class="semi-bold">Bali</p>
+                        </div>
+                        <p>23 Mar 2024</p>
+                    </div>
+
+                    <div class="d-flex justify-content-between align-items-end mt-4">
+                        <div class="d-inline-flex flex-column">
+                            <p>Lion Air</p>
+                            <p>Ekonomi</p>
+                        </div>
+                        <div class="d-inline-flex flex-column align-items-end">
+                            <p class="font-13">Mulai dari</p>
+                            <p class="font-orange semi-bold font-20">IDR 695.580</p>
+                        </div>
+                    </div>
+                </div>
+            </div>       
+        </div>
+
+    </div>
+
+    <div class="mt-5 bg-dark-blue d-flex flex-column justify-content-center align-items-center gap-5 pt-5 pb-5">
+        <p class="font-white font-25">Partner Kami</p>
+        <div class="d-flex flex-wrap justify-content-evenly">
+            <img src="/image/citilink.png" class="img-white p-5">
+            <img src="/image/super-air.png" class="img-white p-5">
+            <img src="/image/batik.png" class="img-white p-5">
+            <img src="/image/lion.png" class="img-white p-5">
+            <img src="/image/viet-jet.png" class="img-white p-5">
+            <img src="/image/garuda.png" class="img-white p-5">
+        </div>
+    </div>
+
+    <!-- footer -->
+
+    <div class="m-120px mt-5">
+        <div class="footer-group">
+            <div class="d-flex align-items-center mb-4" id="footer-p">
+                <p class="font-20" style="max-width: 712px; text-align: justify; line-height:normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, lectus eu fermentum lobortis, massa ante rutrum odio, id rutrum neque magna in libero. Nullam aliquam eros nec sapien dignissim, quis mollis augue elementum. Aliquam efficitur tortor sapien, eu tempor metus rhoncus a. Sed eget mauris lacus. Donec finibus euismod nisl in rutrum.</p>
+            </div>
+            
+            <div class="d-flex flex-grow-1 gap-5 footer-right">
+                <div class="d-flex flex-column gap-4 align-items-center mb-4" id="footer-about">
+                    <div>
+                        <p class="font-20 semi-bold mb-4">Support</p>
+                        <div class="d-flex flex-column gap-2">
+                            <p>About Us</p>
+                            <p>How to Book</p>
+                            <p>Help Center</p>
+                            <p>Contact Us</p>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="d-flex flex-column align-items-center">
+                    <div>
+                        <p class="font-20 semi-bold mb-4">Produk</p>
+                        <div class="d-flex flex-column gap-2">
+                            <p>Pesawat</p>
+                            <p>Penginapan</p>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="d-flex flex-column gap-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>IDR</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">GBP</option>
+                      </select>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Bahasa Indonesia</option>
+                        <option value="1">English</option>
+                      </select>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="mt-3 mb-3 d-flex justify-content-between">
+            <h3 id="logo">TICKET.</h3>
+
+            <div class="d-flex gap-5">
+                <p><i class="fa-brands fa-facebook fa-xl"></i></p>
+                <p><i class="fa-brands fa-x-twitter fa-xl"></i></p>
+                <p><i class="fa-brands fa-youtube fa-xl"></i></p>
+                <p><i class="fa-brands fa-instagram fa-xl"></i></p>
+            </div>
+        </div>
+    </div>
+</body>

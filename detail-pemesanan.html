@@ -44,9 +44,9 @@
         </div>
     </nav>
 
-    <div class="d-flex m-240px mt-5">
+    <div class="d-flex m-240px gap-5" style="margin-top: 150px;">
         <!-- left -->
-        <div class="d-flex flex-column">
+        <div class="d-flex flex-column justify-content-between">
             <!-- detail pemesanan -->
             <div class="gap-4 d-flex flex-column">
                 <div>
@@ -65,21 +65,122 @@
             </div>
 
             <!-- detail penumpang -->
-            <div class="d-flex flex-column mt-80px">
+            <div class="d-flex flex-column mt-80px gap-4">
                 <h2 class="mb-0 semi-bold font-31">Detail Penumpang</h2>
                 <div class="p-4 d-flex flex-column gap-3 border rounded-2">
+                    <h3 class="font-25">Penumpang 1</h3>
                     <!-- nama -->
                     <input type="email" class="form-control p-3" id="exampleFormControlInput1" placeholder="Nama Lengkap">
                     <!-- tgl lahir n kebangsaan -->
                     <div class="d-flex gap-3">
-                        <input id="phone" type="tel" name="phone" class="rounded-2 border" style="height: 50px;"/>
-                        <select class="form-select" aria-label="Default select example">
-                            <option selected>Open this select menu</option>
-                            <option value="1">One</option>
-                            <option value="2">Two</option>
-                            <option value="3">Three</option>
-                          </select>    
+                        <input type="date" class="p-3 border rounded-1" style="width: 300px;">
+                        <input type="text" class="form-control p-3" id="exampleFormControlInput1" placeholder="Kebangsaan">
                     </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="d-flex flex-column flex-fill border-blue rounded-2 ms-auto" style="max-width: 520px;">
+            <!-- destination -->
+            <div class="d-flex justify-content-center p-4 bg-cream gap-5 align-items-center border-blue-b">
+                <p class="font-25">Jakarta</p>
+                <p><i class="fa-solid fa-arrow-right-arrow-left fa-lg"></i></p>
+                <p class="font-25">Denpasar</p>
+            </div>
+            <!-- detail -->
+            <div class="d-flex flex-column p-4 gap-5">
+                <!-- berangkat -->
+                <div class="d-flex flex-column gap-3">
+                    <div>
+                        <h4 class="font-20">Berangkat</h4>
+                        <p>Kamis, 22 Februari 2024</p>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <img src="/image/air-asia.png" alt="" style="width: 45px;">
+                        <div>
+                            <h5>AirAsia Indonesia</h5>
+                            <p class="font-dark-gray">Ekonomi</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <div class="d-flex flex-column text-center">
+                            <p class="font-20">21:30</p>
+                            <p>CGK - Feb 22</p>
+                        </div>
+                        <div class="d-flex flex-column text-center flex-fill">
+                            <p class="font-dark-gray font-13">1j 50m</p>
+                            <div class="line" style="width: 100%;"></div>
+                            <p class="font-dark-gray font-13">Langsung</p>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <p class="font-20">23:20</p>
+                            <p>DPS - Feb 23</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <!-- refund -->
+                        <div class="d-flex align-items-center gap-1">
+                            <p><i class="fa-solid fa-circle-check font-blue fa-lg"></i></p>
+                            <p class="font-13 font-blue">Bisa Refund</p>
+                        </div>
+                        <!-- reschedule -->
+                        <div class="d-flex align-items-center gap-1">
+                            <p><i class="fa-solid fa-circle-check font-blue fa-lg"></i></p>
+                            <p class="font-13 font-blue">Bisa Reschedule</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- pulang -->
+                <div class="d-flex flex-column gap-3">
+                    <div>
+                        <h4 class="font-20">Pulang</h4>
+                        <p>Kamis, 25 Februari 2024</p>
+                    </div>
+
+                    <div class="d-flex gap-3 align-items-center">
+                        <img src="/image/air-asia.png" alt="" style="width: 45px;">
+                        <div>
+                            <h5>AirAsia Indonesia</h5>
+                            <p class="font-dark-gray">Ekonomi</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center gap-3">
+                        <div class="d-flex flex-column text-center">
+                            <p class="font-20">09:35</p>
+                            <p>DPS - Feb 25</p>
+                        </div>
+                        <div class="d-flex flex-column text-center flex-fill">
+                            <p class="font-dark-gray font-13">1j 50m</p>
+                            <div class="line" style="width: 100%;"></div>
+                            <p class="font-dark-gray font-13">Langsung</p>
+                        </div>
+                        <div class="d-flex flex-column text-center">
+                            <p class="font-20">23:20</p>
+                            <p>CGK - Feb 25</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between">
+                        <!-- refund -->
+                        <div class="d-flex align-items-center gap-1">
+                            <p><i class="fa-solid fa-circle-check font-blue fa-lg"></i></p>
+                            <p class="font-13 font-blue">Bisa Refund</p>
+                        </div>
+                        <!-- reschedule -->
+                        <div class="d-flex align-items-center gap-1">
+                            <p><i class="fa-solid fa-circle-check font-blue fa-lg"></i></p>
+                            <p class="font-13 font-blue">Bisa Reschedule</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-dark-blue d-flex justify-content-center align-items-center rounded" style="height: 55px;" id="button">
+                    <a href="#" class="font-white semi-bold hover-to-none button">Lanjut</a>
                 </div>
             </div>
         </div>

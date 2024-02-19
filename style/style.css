@@ -83,8 +83,8 @@ p{
     padding: 20px;
 }
 
-.m-120px{
-    margin: 0px 220px;
+.m-5pc{
+    margin: 0px 5%;
 }
 .m-140px{
     margin: 0px 240px;
@@ -195,7 +195,10 @@ select{
     justify-content: end;
 }
 
-
+.navbar{
+    left: 0;
+    right: 0;
+}
 
 
 
@@ -208,11 +211,6 @@ select{
     height: 808px;
     border-radius: 0px 0px 5px 5px;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 29.5%)linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 29.5%);
-}
-
-
-#nav-items{
-    width: 25%;
 }
 
 
@@ -233,7 +231,11 @@ select{
 
 
 #head{
-    margin: 220px auto 0px auto;
+    /* position: absolute; */
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
     width: 1088px;
     color: white;
     text-align: center;
@@ -250,15 +252,16 @@ select{
 
 
 .card-plane-bg{
-    width: 1088px;
+    max-width: 1088px;
     background-color: var(--dark-blue);
     margin: auto;
-    margin-top: 130px;
+    margin-bottom: -250px;
+    top: -250px;
 }
 
 .card-plane-list{
-    width: 257px;
-    height: 60px;
+    max-width: 257px;
+    max-height: 60px;
     background-color: white;
     padding: 9px 20px;
     color: var(--orange);
@@ -266,8 +269,8 @@ select{
 
 #card-plane-desc{
     background-color: white;
-    height: 100%;
-    padding: 41px 118px;
+    /* height: 100%; */
+    padding: 41px 5%;
 }
 
 #card-plane-desc #button{

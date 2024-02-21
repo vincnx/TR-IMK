@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ticket</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/bec4b8746b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/style/style.css">
+</head>
+<body>
+    <!-- navbar n image -->
+    <div class="m-5pc pt-2 position-relative image-top" style="background-image: url(/image/penginapan1.png); background-size: cover; background-position: center;">
+    <!-- navbar -->
+        <nav class="navbar ms-3 me-3">
+            <a href="index.html" id="logo" class="text-decoration-none">TICKET.</a>
+            <div class="justify-content-between gap-4 w-25 navbar-items">
+                <a href="pesawat.html" class="text-decoration-none font-dark-blue hover-blue">Pesawat</a>
+                <a href="penginapan.html" class="text-decoration-none font-dark-blue active">Penginapan</a>
+            </div>
+            <div class="justify-content-between align-items-center gap-4 navbar-items">
+                <p>Masuk</p>
+                <div id="daftar" >
+                    <p class="mb-0 font-white">daftar</p>
+                </div>
+            </div>
+            <div class="navbar-dropdown">
+                <p><i class="fa-solid fa-bars fa-lg"></i></p>
+            </div>
+        </nav>
+        <h1 id="head-pesawat" class="position-absolute font-dark-blue" >Temukan Penginapan <br> Terbaik</h1>
+        <img src="/image/penginapan1.png" alt="" style="visibility: hidden;" class="img-fluid" >
+    </div>
+
+    <!-- card pesan kamar -->
+    <div class="gap-3 shadow position-relative card-kamar">
+        <!-- left -->
+        <div class="d-inline-flex align-items-center">
+            <!-- alamat -->
+            <div class="d-inline-flex flex-column alamat gap-2">
+                <!-- kota -->
+                <div class="d-inline-flex flex-column">
+                    <p class="font-20">Kota</p>
+                    <div id="asal">
+                        <span class="input font-39 semi-bold" role="textbox" contenteditable>Jakarta</span>
+                    </div>
+                </div>
+                <!-- tamu dan kamar -->
+                <div>
+                    <div class="d-flex gap-2 align-items-center">
+                        <p class="bold font-20">Tamu dan Kamar</p>
+                        <p><i class="fa-regular fa-id-badge fa-lg"></i></p>
+                    </div>
+                    <div class="d-flex gap-2">
+                        <select name="language" id="class" class="border-0 font-20 semi-bold" style="width: 35%;">
+                            <option value="ekonomi" class="font-20" selected>1 Dewasa</option>
+                            <option value="premium-ekonomi" class="font-20">2 Dewasa</option>
+                            <option value="bisnis" class="font-20">Custom</option>
+                        </select>
+                        <select name="language" id="class" class="border-0 font-20 semi-bold" style="width: 28%;">
+                            <option value="ekonomi" class="font-20" selected>0 Anak</option>
+                            <option value="premium-ekonomi" class="font-20">1 Anak</option>
+                            <option value="bisnis" class="font-20">1 Anak</option>
+                            <option value="first-class" class="font-20">Custom</option>
+                        </select>
+                        <select name="language" id="class" class="border-0 font-20 semi-bold" style="width: 31%;">
+                            <option value="ekonomi" class="font-20" selected>1 Kamar</option>
+                            <option value="premium-ekonomi" class="font-20">2 Kamar</option>
+                            <option value="bisnis" class="font-20">Custom</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- right -->
+        <div class="d-inline-flex flex-column justify-content-center gap-4">
+            <!-- tengah -->
+            <div class="d-flex justify-content-between gap-4">
+                <div>
+                    <div class="d-flex align-items-center">
+                        <p class="font-20">Check in</p>
+                        <p><i class="fa-regular fa-calendar p-2 fa-lg"></i></p>
+                    </div>
+                    <p class="semi-bold font-31">22 Feb 2024</p>
+                </div>
+                <div>
+                    <div class="d-flex align-items-center">
+                        <p class="font-20">Check out</p>
+                        <p><i class="fa-regular fa-calendar p-2 fa-lg"></i></p>
+                    </div>
+                    <p class="semi-bold font-31">25 Feb 2024</p>
+                </div>
+            </div>
+            <!-- bawah -->
+            <div class="bg-dark-blue d-flex justify-content-center align-items-center rounded" id="button">
+                <a href="#" class="font-white font-20 semi-bold hover-to-none button">Cari sekarang</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- diskon penginapan -->
+    <div class="m-5pc mt-5 penginapan-discount">
+        <!-- header -->
+        <h3 id="head-3">Spesial Untukmu</h3>
+        <div class="plane-discount-desc">
+            <p class="font-dark-gray" id="paragraph">Dapatkan tempat penginapan nyaman dengan harga spesial</p>
+        </div>
+        <!-- card -->
+        <div class="justify-content-between mt-4 gap-3 card-list">
+            <!-- card 1 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-1">
+                <!-- image -->
+                <img src="/image/penginapan2.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Hotel Triniti Gajah Mada</p>
+                    <div>
+                        <p><s class="font-gray font-20">IDR 409.000</s></p>
+                        <p class="semi-bold font-20 font-orange">IDR 210.000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-2">
+                <!-- image -->
+                <img src="/image/penginapan3.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20">Sun Rise Hotel</p>
+                    <div>
+                        <p><s class="font-gray font-20">IDR 517.333</s></p>
+                        <p class="semi-bold font-20 font-orange">IDR 388.000</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-3">
+                <!-- image -->
+                <img src="/image/penginapan4.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20">Olympic Hotel</p>
+                    <div>
+                        <p><s class="font-gray font-20">IDR 392.733</s></p>
+                        <p class="semi-bold font-20 font-orange">IDR 284.550</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-4">
+                <!-- image -->
+                <img src="/image/penginapan5.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20">D'Bamboo Suites</p>
+                    <div>
+                        <p><s class="font-gray font-20">IDR 530.000</s></p>
+                        <p class="semi-bold font-20 font-orange">IDR 328.600</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-5">
+                <!-- image -->
+                <img src="/image/penginapan7.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20">Ayaka Suites</p>
+                    <div>
+                        <p><s class="font-gray font-20">IDR 839.000</s></p>
+                        <p class="semi-bold font-20 font-orange">IDR 606.793</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- hotel -->
+    <div class="m-5pc mt-5 penginapan-discount" id="hotel">
+        <!-- header -->
+        <h3 id="head-3">Hotel</h3>
+        <!-- card -->
+        <div class="justify-content-between mt-5 gap-3 card-list">
+            <!-- card 1 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-1">
+                <!-- image -->
+                <img src="/image/penginapan6.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Grand Hyatt Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 210.000</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-2">
+                <!-- image -->
+                <img src="/image/penginapan7.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ayaka Suites</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 606.793</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-3">
+                <!-- image -->
+                <img src="/image/penginapan8.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Orchardz Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 513.000</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-4">
+                <!-- image -->
+                <img src="/image/penginapan9.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ibiz Jakarta Arcadia</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 508.200</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-5">
+                <!-- image -->
+                <img src="/image/penginapan10.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">The Langham</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 3.368.500</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- cottage -->
+    <div class="m-5pc mt-5 penginapan-discount" id="hotel">
+        <!-- header -->
+        <h3 id="head-3">Cottage</h3>
+        <!-- card -->
+        <div class="justify-content-between mt-5 gap-3 card-list">
+            <!-- card 1 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-1">
+                <!-- image -->
+                <img src="/image/penginapan6.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Grand Hyatt Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 210.000</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-2">
+                <!-- image -->
+                <img src="/image/penginapan7.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ayaka Suites</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 606.793</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-3">
+                <!-- image -->
+                <img src="/image/penginapan8.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Orchardz Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 513.000</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-4">
+                <!-- image -->
+                <img src="/image/penginapan9.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ibiz Jakarta Arcadia</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 508.200</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-5">
+                <!-- image -->
+                <img src="/image/penginapan10.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">The Langham</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 3.368.500</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- cottage -->
+    <div class="m-5pc mt-5 penginapan-discount" id="hotel">
+        <!-- header -->
+        <h3 id="head-3">Villa</h3>
+        <!-- card -->
+        <div class="justify-content-between mt-5 gap-3 card-list">
+            <!-- card 1 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-1">
+                <!-- image -->
+                <img src="/image/penginapan6.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Grand Hyatt Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 210.000</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 2 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-2">
+                <!-- image -->
+                <img src="/image/penginapan7.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ayaka Suites</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 606.793</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 3 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-3">
+                <!-- image -->
+                <img src="/image/penginapan8.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Orchardz Jakarta</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 513.000</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 4 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-4">
+                <!-- image -->
+                <img src="/image/penginapan9.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">Ibiz Jakarta Arcadia</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 508.200</p>
+                            <p>Jakarta Selatan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- card 5 -->
+            <div class="plane-discount-card flex-grow-1 flex-shrink-1" id="card-5">
+                <!-- image -->
+                <img src="/image/penginapan10.png" alt="" class="img-fluid">
+                <!-- desc -->
+                <div class="p-20px d-inline-flex flex-column justify-content-between border-bottom-1 shadow-sm gap-3">
+                    <p class="semi-bold font-20 overflow-hidden">The Langham</p>
+                    <div>
+                        <p>From</p>
+                        <div id="price-loc">
+                            <p class="semi-bold font-20 font-orange">IDR 3.368.500</p>
+                            <p>Jakarta Pusat</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="mt-5 pt-4 footer">
+        <div class="m-5pc d-flex flex-column">
+            <!-- footer-top -->
+            <div class="d-flex justify-content-between mb-5 gap-5">
+                <!-- paragraph -->
+                <div id="paragraph">
+                    <p class="font-20" style="text-align: justify; line-height:normal;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus lobortis, lectus eu fermentum lobortis, massa ante rutrum odio, id rutrum neque magna in libero. Nullam aliquam eros nec sapien dignissim, quis mollis augue elementum. Aliquam efficitur tortor sapien, eu tempor metus rhoncus a. Sed eget mauris lacus. Donec finibus euismod nisl in rutrum.</p>
+                </div>
+                <!-- support -->
+                <div class="d-flex flex-column gap-4">
+                    <p class="font-20 semi-bold">Support</p>
+                    <div class="d-flex flex-column gap-3">
+                        <p>About Us</p>
+                        <p>How to Book</p>
+                        <p>Help Center</p>
+                        <p>Contact Us</p>
+                    </div>
+                </div> 
+                <!-- produk -->
+                <div>
+                    <p class="font-20 semi-bold mb-4">Produk</p>
+                    <div class="d-flex flex-column gap-3">
+                        <p>Pesawat</p>
+                        <p>Penginapan</p>
+                    </div>
+                </div>
+                <!-- dropdown -->
+                <div class="d-flex flex-column gap-4">
+                    <select class="form-select" aria-label="Default select example">
+                        <option selected>IDR</option>
+                        <option value="1">USD</option>
+                        <option value="2">EUR</option>
+                        <option value="3">GBP</option>
+                      </select>
+                      <select class="form-select" aria-label="Default select example">
+                        <option selected>Bahasa Indonesia</option>
+                        <option value="1">English</option>
+                      </select>
+                </div>
+            </div>
+            <!-- line -->
+            <div class="line"></div>
+            <!-- logo -->
+            <div class="mt-3 mb-3 d-flex justify-content-between align-items-center">
+                <h5 id="logo">TICKET.</h5>
+    
+                <div class="d-flex gap-5">
+                    <p><i class="fa-brands fa-facebook fa-xl"></i></p>
+                    <p><i class="fa-brands fa-x-twitter fa-xl"></i></p>
+                    <p><i class="fa-brands fa-youtube fa-xl"></i></p>
+                    <p><i class="fa-brands fa-instagram fa-xl"></i></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>

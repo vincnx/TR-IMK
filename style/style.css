@@ -15,13 +15,18 @@ font-family: Inter;
 font-size: 16px;
 font-weight: 500;
 color: var(--dark-blue);
-text-decoration: none !important;
 }
+a{
+    text-decoration: none !important;
+}
+
 p{
     margin: 0px !important;
     padding: 0px !important;
 }
-
+h3, h4{
+    margin-bottom: 0px !important;
+}
 
 /* font */
 .font-13{
@@ -76,6 +81,9 @@ p{
 }
 .font-blue{
     color: var(--blue);
+}
+.font-gray{
+    color: var(--gray);
 }
 
 /* layout */
@@ -179,17 +187,29 @@ p{
     margin-bottom: 0;
 }
 
+.navbar-dropdown{
+    display: none;
+}
+.navbar-items{
+    display: flex;
+}
+
+
+
 .jumbotron{
-    /* min-height: 100vh; */
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 29.5%), url(/image/index1.png) no-repeat;
     background-size: contain;
     background-position: center;
     background-attachment: fixed;
 }
 
+
+
+
 select{
     width: 150px;
 }
+
 .footer-right{
     
     justify-content: end;
@@ -200,7 +220,13 @@ select{
     right: 0;
 }
 
+.newsletter h1{
+    max-width: 890px;
+}
 
+.newsletter #input{
+    width: 65%;
+}
 
 
 
@@ -213,10 +239,6 @@ select{
     background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 29.5%)linear-gradient(180deg, rgba(0, 0, 0, 0.00) 0%, rgba(0, 0, 0, 0.20) 29.5%);
 }
 
-
-#masuk-daftar{
-    gap: 15%;
-}
 
 #daftar{
     background-color: var(--dark-blue);
@@ -231,16 +253,24 @@ select{
 
 
 #head{
-    /* position: absolute; */
     top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     height: 150px;
     width: 1088px;
-    color: white;
-    text-align: center;
     font-size: 61px;
     font-weight: 950;
+}
+
+#head-pesawat{
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 150px;
+    width: 1088px;
+    font-size: 61px;
+    font-weight: 950;
+    /* text-align: start; */
 }
 
 #head2{
@@ -250,8 +280,15 @@ select{
     font-weight: 950;
 }
 
+#head-3{
+    font-weight: 600;
+    font-size: 39px;   
+}
 
-.card-plane-bg{
+/* card plane */
+.card-plane{
+    display: flex;
+    flex-direction: column;
     max-width: 1088px;
     background-color: var(--dark-blue);
     margin: auto;
@@ -267,15 +304,89 @@ select{
     color: var(--orange);
 }
 
-#card-plane-desc{
+.card-plane-desc{
     background-color: white;
-    /* height: 100%; */
-    padding: 41px 5%;
+    padding: 3% 5%;
 }
 
-#card-plane-desc #button{
+.card-plane-2{
+    max-width: 1088px;
+    display: flex;
+    background-color: white;
+    padding: 2% 3%;
+    margin: auto;
+    top: -200px;
+    margin-bottom: -200px;
+    justify-content: space-between;
+}
+
+.card-plane-desc #button, .card-plane-2 #button, .card-kamar #button{
     height: 45px;
 }
+
+.card-kamar{
+    max-width: 1088px;
+    display: flex;
+    background-color: white;
+    padding: 2% 3%;
+    margin: auto;
+    top: -150px;
+    margin-bottom: -150px;
+    justify-content: space-between;
+    height: 250px;
+}
+.penginapan-discount #price-loc{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;   
+}
+
+
+
+
+/* plane discount */
+.card-list{
+    display: flex;
+}
+.plane-discount-card{
+    display: inline-flex;
+    flex-direction: column;
+}
+.plane-discount-desc{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+.tujuan-bulan{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/* footer */
+.footer #paragraph{
+    display: flex;
+    align-items: center;
+    max-width: 712px;
+}
+
+
+#sponsor img{
+    width: 125px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .border-btm-active{
     border-bottom: 1px solid var(--blue);
@@ -289,7 +400,7 @@ select{
     
 }
 
-.footer-p-white p, .footer-p-wite i{
+.footer-p-white p, .footer-p-white i{
     color: white;
 }
 
@@ -299,38 +410,261 @@ select{
 
 
 
+@media only screen and (max-width: 1600px){
+    /* header */
+    #head, #head-pesawat{
+        font-size: 49px;
+        top: 45%;
+    }
+    #head-pesawat{
+        width: 750px;
+    }
 
-@media only screen and (max-width: 1950px){
+    /* index.html */
+    /* newsletter */
+    .newsletter img{
+        width: 550px;
+    }
     .newsletter h1{
-        /* justify-content:center  !important;
-        text-align: center; */
         font-size: 49px;
     }
-    
-    .newsletter img{
-        /* display: none; */
-        width: 40%;
+    .newsletter #input{
+        width: 80%;
+    }
+
+    /* card-plane */
+    .card-plane .font-39, .card-plane-2 .font-39, .card-kamar .font-39{
+        font-size: 31px;
+    }
+    .card-plane .font-31, .card-plane-2 .font-31, .card-kamar .font-31{
+        font-size: 25px;
+    }
+    .card-plane .font-20, .card-plane-2 .font-20, .card-kamar .font-20{
+        font-size: 16px;
+    }
+    .card-plane, .card-plane-2{
+        width: 750px;
+        top: -200px;
+        margin-bottom: -200px;
+    }
+
+    .card-kamar{
+        width: 750px;
+    }
+
+    /* diskon pesawat */
+    .plane-discount p, .penginapan-discount p{
+        font-size: 13px;
+    }
+    .plane-discount .font-13, .penginapan-discount .font-13{
+        font-size: 10px;
+    }
+    .plane-discount .font-20, .penginapan-discount .font-20{
+        font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 1700px){
-    .newsletter{
-        justify-content: center;
-        text-align: center;
+@media only screen and (max-width: 1400px){
+    
+    /* footer */
+    .footer #paragraph{
+        max-width: 350px;
     }
-
-    .newsletter img{
+    
+    .footer #paragraph p{
+        font-size: 16px;
+    }
+    
+    /* index.html */
+    /* plane discount */
+    .plane-discount .mt-3{
+        margin-top: 10px;
+    }
+    .plane-discount #card-4, .penginapan-discount #card-5{
         display: none;
     }
 
-    .input{
-        width: 100% !important;
+}
+
+@media only screen and (max-width: 1200px){
+    /* index.html */
+    /* header */
+    #head{
+        font-size: 39px;
+        width: 78%;
     }
-    #footer-p{
+    #head-pesawat{
+        width: 700px;
+        font-size: 39px;
+    }
+    
+    /* card plane */
+    .card-plane, .card-plane-2, .card-kamar{
+        width: 700px;
+    }
+    .card-plane-2{
+        top: -150px;
+        margin-bottom: -150px;
+    }
+
+    /* plane discount */
+    .tujuan-bulan{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .penginapan-discount #card-4{
+        display: none;
+    }
+
+    
+    
+    /* newsletter */
+    .newsletter{
         justify-content: center;
     }
-    .footer-right{
-        justify-content: space-between;
-        margin-top: 30px;
+    .newsletter h1{
+        text-align: center;
+    }
+    .newsletter img{
+        display: none;
+    }
+    .newsletter #cont{
+        align-items: center;
+    }
+
+
+    #sponsor p{
+        font-size: 20px;
+    }
+    #sponsor img{
+        width: 75px;
+    }
+}
+
+@media only screen and (max-width: 1000px){
+    /* logo */
+    #logo{
+        font-size: 20px;
+    }
+    
+    
+    /* navbar */
+    .navbar-dropdown{
+        display: inline;
+    }
+    .navbar-items{
+        display: none;
+    }
+
+    
+    /* footer */
+    .footer #paragraph{
+        display: none;
+    }
+    
+    /* index.html */
+    /* header */
+    #head{
+        font-size: 31px;
+    }
+    #head-pesawat{
+        width: 600px;
+        font-size: 31px;
+        top: 50%;
+    }
+
+
+    /* card-plane */
+    .card-plane .font-39, .card-plane-2 .font-39, .card-kamar .font-39{
+        font-size: 25px;
+    }
+    .card-plane .font-31, .card-plane-2 .font-31, .card-kamar .font-31{
+        font-size: 20px;
+    }
+    .card-plane .font-20, .card-plane-2 .font-20, .card-kamar .font-20{
+        font-size: 13px;
+    }
+    .card-plane{
+        width: 600px;
+        top: -180px;
+        margin-bottom: -180px;
+    }
+    .card-plane-2{
+        width: 600px;
+    }
+    .card-kamar{
+        width: 600px;
+        height: 200px;
+    }
+    
+    .penginapan-discount #card-3{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-width: 750px){
+    /* index.html */
+    /* header */
+    #head{
+        top: 70%;
+    }
+    #head-pesawat{
+        top: 55%;
+        width: 80%;
+    }
+
+    /* card plane */
+    .card-plane, .card-plane-2, .card-kamar{
+        display: none;
+    }
+    
+    /* plane discount */
+    .plane-discount #card-3{
+        display: none;
+    }
+
+    /* plane discount */
+    #head-3{
+        font-size: 25px;
+    }
+    .plane-discount #paragraph{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 600px){
+    .penginapan-discount #price-loc{
+        flex-direction: column;
+        align-items: start;
+    }
+}
+
+@media only screen and (max-width: 500px){
+    #head-pesawat{
+        top: 70%;
+        font-size: 25px;
+        text-align: center;
+    }
+    
+    /* index.html */
+    /* plane discount */
+    #head-3{
+        font-size: 25px;
+    }
+    .plane-discount #card-3{
+        display: none;
+    }
+    .card-list{
+        flex-direction: column;
+    }
+    .plane-discount-desc p{
+        font-size: 10px;
+    }
+
+    /* tipe penginapan */
+    .tipe-penginapan h4{
+        font-size: 39px;
     }
 }
